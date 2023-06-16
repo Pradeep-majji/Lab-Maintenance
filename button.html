@@ -1,0 +1,84 @@
+<html>
+<style>
+ *{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.btn-group button {
+  cursor: pointer;
+  margin-top:20px;
+  border-radius: 5px;
+  border: 2px solid blue;
+  overflow: hidden;
+  margin-left:30px;
+}
+
+.btn-group button:hover {
+  opacity:80%;
+}
+
+.container{
+    display:flex;
+    flex-direction:row;
+    margin-left:300px;
+ }
+ .header{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  height:130px;
+  background: #076593;
+ }
+ .name{
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  font-size: 50px;
+  margin-left: 420px;
+  color:white;
+  font-weight: bolder;
+ }
+ button .namecontainer {
+    position: relative;
+    text-align: center;
+    color: black;
+    height:250px;
+    width:300px;
+}
+
+button .namecontainer .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight:bold;
+    color:aqua;
+    transform: translate(-75%, -75%);
+    font-size: 30px;
+  }
+</style>
+<body>
+<div class="header"><div class="name">SRKR LAB DIRECTORY</div>
+<button name="HOME" value="HOME" style="background:#1a8ac3; height:40px;width:200px;font-size:20px; color:white; cursor:pointer; border-radius:5px; margin-left:100px; margin-top:40px;" onclick="window.location.href='index.html'">Logout</button>
+</div>
+<form action="colour.php" method="POST">
+<div class="container">
+<div class="btn-group">
+  <button type="submit" name="1" value="1"><div class="namecontainer"><img src="srkrlab1.jpg" alt="srkr" style="height:250px;width:300px;"><div class="centered">LAB-1</div></div></button>
+  <button type="submit" name="1" value="2"><div class="namecontainer"><img src="srkrlab2.jpg" alt="srkr" style="height:250px;width:300px;"><div class="centered">LAB-2</div></div></button>
+  <button type="submit" name="1" value="3"><div class="namecontainer"><img src="srkrlab1.jpg" alt="srkr" style="height:250px;width:300px;"><div class="centered">LAB-3</div></div></button>
+  <button type="submit" name="1" value="4"><div class="namecontainer"><img src="srkrlab2.jpg" alt="srkr" style="height:250px;width:300px;"><div class="centered">LAB-4</div></div></button>
+  <button type="submit" name="1" value="5"><div class="namecontainer"><img src="srkrlab1.jpg" alt="srkr" style="height:250px;width:300px;"><div class="centered">LAB-5</div></div></button>
+  <button type="submit" name="1" value="6"><div class="namecontainer"><img src="srkrlab2.jpg" alt="srkr" style="height:250px;width:300px;"><div class="centered">LAB-6</div></div></button>
+  <button type="submit" name="1" value="7"><div class="namecontainer"><img src="srkrlab1.jpg" alt="srkr" style="height:250px;width:300px;"><div class="centered">LAB-7</div></div></button>
+  <button type="submit" name="1" value="8"><div class="namecontainer"><img src="srkrlab2.jpg" alt="srkr" style="height:250px;width:300px;"><div class="centered">LAB-8</div></div></button>
+  <button type="submit" name="1" value="9"><div class="namecontainer"><img src="srkrlab1.jpg" alt="srkr" style="height:250px;width:300px;"><div class="centered">LAB-9</div></div></button>
+  </div>
+</div>
+</form>
+</body>
+</html> 

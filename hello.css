@@ -1,0 +1,39 @@
+
+body {
+    color: #02130a;
+    box-sizing: border-box;
+    background-color: rgb(28, 7, 7);
+    padding: 48px;
+  }
+  
+  h1 {
+    font-size: 6em;
+    font-weight: bolder;
+  }
+  h2 {
+     color:aqua;
+     padding-right: 15%;
+     font-size: 30px;
+
+  }
+
+  main {
+    width: 90%;
+    max-width: 1080px;
+    padding: 40px 0 0;
+    margin: 0 auto;
+  }
+  
+  main div {
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 64px;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    border-radius: 0;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+

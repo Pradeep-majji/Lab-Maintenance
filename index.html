@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatibie=edge" />
+        <link href="start1.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label class="logo">SRKR LAB DIRECTORY</label>
+            <ul>
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="studentbt.html">STUDENT</a></li>
+                <li><a href="login.php">TEACHER</a></li>
+                <li><a href="adminlogin.php">LAB ASSOCIATE</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="srkrlogo.jpg" alt="not found"></div>
+                  <div class="swiper-slide"><img src="srkrlab1.jpg" alt="not found"></div>
+                  <div class="swiper-slide"><img src="srkrlab2.jpg" alt="not found"></div>
+                  <div class="swiper-slide"><img src="srkrlab3.jpg" alt="not found"></div>
+                  <div class="swiper-slide"><img src="srkrlab4.webp" alt="not found"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        </div>
+    </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay:2000,
+                disableOnInteraction:false,
+            },
+            loop: true,
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+             },
+            });
+        </script>
+
+        <section  id="about" >
+            <div class="about1">
+            <div class="aboutsrkr">
+                <h1> ABOUT SRKR</h1>
+                <hr><br><br>  
+                <p>
+                    Sagi Rama Krishnam Raju Engineering College (SRKREC), established in 1980, is a self-financed academic institution of coeducation striving to provide a high quality technical education to engineering aspirants. Being one of the premier and well-established technical institutions of the country, it continues to render service to the nation and the world at large with its alumni holding highly prestigious positions and making substantial contribution
+                </p>
+            </div>
+            <div class="contactus">
+                <h1> CONTACT US</h1>
+                <hr><br><br>  
+                <p>
+                     SRKR Engineering College
+                     (Autonomous)
+                     SRKR Marg, China Amiram,
+                     Bhimavaram, A.P, India - 534204
+                     Telephone: +91 (8816) 223332
+                     Mobile: +91 9848823332, 9848381818
+                     Email: principal@srkrec.ac.in
+                     </p>
+            </div>
+        </div>
+        </section>
+    </body>
+</html>
